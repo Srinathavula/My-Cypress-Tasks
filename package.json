@@ -1,0 +1,22 @@
+{
+  "name": "pixelvide-cypress",
+  "private": true,
+  "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "test:alison": "cypress run --spec 'cypress/e2e/alison/**/*.cy.js'",
+    "test:demoqa": "cypress run --spec 'cypress/e2e/demoqa/**/*.cy.js'",
+    "test:report": "npm run clean && cypress run && npm run report:merge",
+    "test:alison:report": "npm run clean && cypress run --spec 'cypress/e2e/alison/**/*.cy.js' && npm run report:merge",
+    "test:demoqa:report": "npm run clean && cypress run --spec 'cypress/e2e/demoqa/**/*.cy.js' && npm run report:merge",
+    "report:merge": "mochawesome-merge cypress/reports/json/*.json > cypress/reports/combined.json && marge cypress/reports/combined.json -o cypress/reports/html",
+    "clean": "rmdir /s /q cypress\\reports 2>nul || true"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.0",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "dotenv": "^16.6.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}

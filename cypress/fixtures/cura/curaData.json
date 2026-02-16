@@ -1,0 +1,14 @@
+{
+  "url": "https://katalon-demo-cura.herokuapp.com/",
+  "credentials": {
+    "username": "John Doe",
+    "password": "ThisIsNotAPassword"
+  },
+  "appointment": {
+    "facility": "Tokyo CURA Healthcare Center",
+    "applyReadmission": true,
+    "program": "Medicare",
+    "visitDate": "18/02/2026",
+    "comment": "Appointment booked for general consultation"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "validData": {
+    "firstName": "Dinesh",
+    "lastName": "Nayak",
+    "email": "revis86613@codgal.com",
+    "gender": "Male",
+    "mobile": "8186096705",
+    "year": "2001",
+    "month": "February",
+    "day": "12",
+    "subjects": ["Computer Science", "English"],
+    "hobbies": ["Sports", "Reading", "Music"],
+    "currentAddress": "Near bjp office, kukatpally, 500072",
+    "filePath": "C:/Users/avula/OneDrive/Pictures/create visual mindmap.png"
+  },
+  "invalidData": {
+    "email": "invalid-email",
+    "mobile": "123",
+    "firstName": ""
+  }
+}
